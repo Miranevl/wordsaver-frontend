@@ -12,9 +12,9 @@ const App = ()  => {
 <>
 <Routes>
 <Route path='/' element={<HomePage/>}></Route>
-<Route path='/register' element={<Register/>}></Route>
-<Route path='/login' element={<Login/> }></Route>
-<Route path='/users/:userId' element={ <Content/>}></Route>
+<Route path='https://wordsaver-pyroject-488fda2b8133.herokuapp.com/register' element={<Register/>}></Route>
+<Route path='https://wordsaver-pyroject-488fda2b8133.herokuapp.com/login' element={<Login/> }></Route>
+<Route path='https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/:userId' element={ <Content/>}></Route>
 </Routes>
 </>
   )
