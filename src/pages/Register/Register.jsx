@@ -29,9 +29,9 @@ const Register = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      await axios.post(`${process.env.API_URL}/register`, data);
+      await axios.post(`https://wordsaver-frontend.vercel.app/register`, data);
       alert('Вы успешно зарегистрированы');
-      navigate(`${process.env.API_URL}/login`);
+      navigate(`/login`);
 
     } catch (err) {
       console.log(err);
