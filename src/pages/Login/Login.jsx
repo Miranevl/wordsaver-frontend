@@ -27,7 +27,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}`);
+      navigate(`users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');
