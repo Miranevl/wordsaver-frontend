@@ -19,7 +19,7 @@ const login = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      const response = await axios.post('https://wordsaver-pyroject-488fda2b8133.herokuapp.com/login', data);
+      const response = await axios.post('/login', data);
       if ('token' in response.data) {
         window.localStorage.setItem('token', response.data.token);
         window.localStorage.setItem('username', response.data.username);
