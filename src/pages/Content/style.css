@@ -1,0 +1,210 @@
+.button-finder {
+    border-radius: 1px 10px 10px 1px !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+.input-search-box {
+    width: 13vw;
+    height: auto;
+    border-radius: 5px 0px 0px 5px;
+    background: #1A1533;
+}
+
+.words-list-menu {
+    height: 7vh;
+    width: auto;
+    border-radius: 10px 10px 0px 0px;
+    background: #343051;
+}
+
+.word-list-content {
+    height: 60vh;
+    width: auto;
+    background: #1A1533;
+    overflow-y: scroll;
+}
+.disabled {
+    background-color: #DCDEE44D;
+    pointer-events: none;
+  }
+
+
+@media (max-width: 1920px) {
+    .input-search-box {
+        width: 180px;
+        height: auto;
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+
+    .button-create-dictionary {
+        height: auto;
+        width: 200px;
+    }
+
+    .button-add-word {
+        height: auto;
+        width: 200px;
+    }
+
+    .button-delete-word {
+        height: auto;
+        width: 200px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .input-search-box {
+        width: 12vw;
+        height: auto;
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+
+    .button-create-dictionary {
+        height: auto;
+        width: 13vw;
+    }
+
+    .button-add-word {
+        height: auto;
+        width: 13vw;
+    }
+
+    .button-delete-word {
+        height: auto;
+        width: 13vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .input-search-box {
+        width: 12vw;
+        height: auto;
+    }
+
+    .input-search-box::placeholder {
+        font-size: 10px !important;
+
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+
+    .button-create-dictionary {
+        height: 50px;
+        width: 120px;
+    }
+
+    .button-add-word {
+        height: 50px;
+        width: 120px;
+    }
+
+    .button-delete-word {
+        height: 50px;
+        width: 15vw;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .input-search-box {
+        width: auto;
+        height: auto;
+
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+    .word-list-content {
+        height: 170px;
+     }
+}
+
+@media (max-width: 576px) {
+    .input-search-box {
+        width: 70vw;
+        height: auto;
+    }
+
+    .input-search-box::placeholder {
+        font-size: 15px !important;
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+
+    .button-create-dictionary {
+        height: auto;
+        width: 50vw;
+    }
+
+    .button-add-word {
+        height: auto;
+        width: 50vw;
+    }
+
+    .button-delete-word {
+        height: auto;
+        width: 50vw;
+    }
+    .world-list-text {
+        font-size: 3vw;
+     }
+     .word-list-content {
+        height: 55vh;
+     }
+}
+
+
+
+@media (max-width: 365px) {
+    .input-search-box {
+        width: 80vw;
+        height: auto;
+    }
+
+    .button-finder {
+        width: auto;
+        height: auto;
+    }
+
+    .button-create-dictionary {
+        height: auto;
+        width: 60vw;
+    }
+
+    .button-add-word {
+        height: auto;
+        width: 60vw;
+    }
+
+    .button-delete-word {
+        height: auto;
+        width: 60vw;
+    }
+
+    .world-list-text {
+        font-size: 9px;
+        text-align: center;
+     }
+     .word-list-content {
+        height: 150px;
+     }
+
+}

@@ -1,0 +1,13 @@
+.user-words-block {
+    width: auto;
+    height: 6vh;
+    border-radius: 10px;
+    background: #2B2642;
+    letter-spacing: 0.1rem;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.user-words-block:hover {
+    background-color: #50497F;
+}

@@ -1,0 +1,23 @@
+.myWords {
+    width: 10vw;
+    height: 3.5vh;
+    border-radius: 0px 0px 0px 10px;
+    background: #251F44;
+    text-align: center;
+}
+
+@media (max-width: 576px){
+    .myWords{
+        width: auto;
+        height: 5vh;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 365px) {
+    .myWords {
+        width: auto;
+        height: 5vh;
+        font-size: 18px;
+    }
+}

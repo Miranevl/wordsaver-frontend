@@ -1,0 +1,27 @@
+.add-word-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Затемнение фона */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.add-word-menu {
+    border-radius: 10px;
+    background: #251F44;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 20px;
+}
+
+.input-add-word{
+    text-align: center;
+}
+.input-add-word::placeholder {
+    text-align: center;
+}

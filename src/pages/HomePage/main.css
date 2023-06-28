@@ -1,0 +1,176 @@
+.main-navbar {
+    height: 80vh;
+    background-color: #50497F;
+    border-radius: 10px 0px 0px 10px;
+    outline: 1px solid rgba(220, 222, 228, 0.2);
+  }
+  
+  .main-content {
+    height: 80vh;
+    width: 80vw;
+    background-color: #251F44;
+    outline: 1px solid rgba(220, 222, 228, 0.2);
+  }
+  
+  button {
+    height: 4.5vh;
+    width: 12vw;
+    background-color: #D7485B;
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    transition: ease-in-out 0.3s;
+  }
+  
+  button:hover {
+    background-color: #50497F;
+  }
+  
+  input {
+    height: auto;
+    width: 35vw;
+    border: none;
+    background-color: #1A1533;
+    color: #DCDEE4;
+    border-radius: 10px;
+    text-indent: 10px;
+  }
+  
+  input::placeholder {
+    text-indent: 10px;
+  }
+  
+  input:hover {
+    outline: 1px solid rgba(151, 71, 255, 0.75);
+  }
+  
+  input:focus {
+    outline: rgba(151, 71, 255, 0.75);
+  }
+  
+  .main-name {
+    height: 6vh;
+    background-color: #5C5874;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .arrow-active {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1920px) {
+    h1 {
+      font-size: 7vh !important;
+    }
+  
+    p {
+      font-size: 3vh;
+    }
+  
+    input {
+      height: 4.5vh;
+    }
+  
+    input::placeholder {
+      font-size: 15px !important;
+    }
+  
+    button {
+      height: auto;
+      width: 15vw;
+      font-size: 17px !important;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .logo {
+      height: auto;
+      width: auto;
+    }
+  
+    button {
+      width: 15vw;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 7vh !important;
+    }
+  
+    .logo {
+      height: auto;
+      width: auto;
+    }
+  
+    button {
+      height: auto;
+      width: 30vw;
+      font-size: 17px !important;
+    }
+  
+    input::placeholder {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    button {
+      height: auto;
+      width: 30vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    input {
+      height: auto;
+      width: 70vw;
+    }
+  
+    input::placeholder {
+      font-size: 12px;
+    }
+  
+    p {
+      font-size: 2.5vh;
+    }
+  
+    button {
+      height: auto;
+      width: 50vw;
+      font-size: 20px !important;
+    }
+  
+    .logo {
+      height: auto;
+      width: auto;
+    }
+  
+    .main-content {
+      height: 80vh;
+    }
+  
+    .main-navbar {
+      height: 50vh;
+    }
+  }
+  
+  @media (max-width: 365px) {
+    .main-content {
+      height: 50vh;
+    }
+  
+    .main-navbar {
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 26px !important;
+    }
+  
+    p {
+      font-size: 14px !important;
+    }
+  }
+  

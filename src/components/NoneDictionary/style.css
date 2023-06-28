@@ -1,0 +1,15 @@
+.text-center-block {
+    margin-top: 35vh;
+}
+
+@media (max-width: 576px){
+    .text-center-block{
+        margin-top: 20vh;
+    }
+}
+ 
+@media (max-width: 365px) {
+    .text-center-block{
+        margin-top: 20vh;
+    }
+} 

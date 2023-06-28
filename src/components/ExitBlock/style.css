@@ -1,0 +1,30 @@
+
+.exit-block {
+    width: auto;
+    height: 10vh;
+    border-radius: 5px;
+    background: #1A1533;
+}
+.exit-block-button {
+    width: auto;
+    height: auto;
+    font-size: 13px !important;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media  (max-width: 576px ){
+    
+}
+
+@media  (max-width: 365px ){
+    .exit-block-button{
+        font-size: 14px !important;
+    }
+}
