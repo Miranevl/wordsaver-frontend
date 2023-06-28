@@ -19,7 +19,7 @@ const login = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      const response = await axios.post('/login', data);
+      const response = await axios.post(`${process.env.API_URL}/login`, data);
       if ('token' in response.data) {
         window.localStorage.setItem('token', response.data.token);
         window.localStorage.setItem('username', response.data.username);
@@ -27,7 +27,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`users/${userId}`);
+      navigate(`${process.env.API_URL}users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');

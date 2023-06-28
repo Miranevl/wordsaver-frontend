@@ -29,9 +29,9 @@ const Register = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      await axios.post('/register', data);
+      await axios.post(`${process.env.API_URL}/register`, data);
       alert('Вы успешно зарегистрированы');
-      navigate(`/login`);
+      navigate(`${process.env.API_URL}/login`);
 
     } catch (err) {
       console.log(err);
