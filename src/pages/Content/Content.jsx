@@ -76,7 +76,7 @@ const content = () => {
       setDictionaryId(dictionaries[index].name);
       setSelectedItem(index);
       setIsDictionarySelected(true);
-      const response = await axios.get(`/users/${userId}/dictionaries/${dictionaryId}`, getToken)
+      const response = await axios.get(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}`, getToken)
       const wordsId = response.data.words;
       setWords(wordsId);
     }
@@ -87,7 +87,7 @@ const content = () => {
   async function deleteIdDictionary(index) {
     try {
       const dictionaryId = dictionaries[index]._id;
-      const response = await axios.delete(`/users/${userId}/dictionaries/${dictionaryId}`, getToken);
+      const response = await axios.delete(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}`, getToken);
       getDictionaries();
       setSelectedItem(null);
       setDictionaryId(null);
@@ -112,7 +112,7 @@ const content = () => {
         name: newDictionary.trim().toLowerCase(),
       }
 
-      await axios.post(`/users/${userId}/dictionaries`, saveDictionary, getToken);
+      await axios.post(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries`, saveDictionary, getToken);
       alert('словарь создан')
       getDictionaries();
       setNewDictionary('');
@@ -124,7 +124,7 @@ const content = () => {
   }
   async function getDictionaries() {
     try {
-      const response = await axios.get(`/users/${userId}/dictionaries`, getToken);
+      const response = await axios.get(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries`, getToken);
       const myDictionary = response.data.dictionaries;
       setDictionaries(myDictionary);
 
@@ -134,7 +134,7 @@ const content = () => {
   }
   async function getWords() {
     try {
-      const response = await axios.get(`/users/${userId}/dictionaries/${dictionaryId}/words`, getToken);
+      const response = await axios.get(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}/words`, getToken);
       const wordsSave = response.data;
       setWords(wordsSave);
     }
@@ -149,7 +149,7 @@ const content = () => {
         transcription: transcription.trim().toLowerCase(),
         translatedWord: translatedWord.trim().toLowerCase(),
       }
-      await axios.post(`/users/${userId}/dictionaries/${dictionaryId}/words`, data, getToken);
+      await axios.post(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}/words`, data, getToken);
       alert('Слово добавлено в словарь');
       getWords();
       setWordtoTranslate('');
@@ -168,7 +168,7 @@ const content = () => {
       } else {
         setSelectedCheckbox([wordId, ...selectedCheckbox]);
       }
-      await axios.get(`/users/${userId}/dictionaries/${dictionaryId}/words/${wordId}`, getToken);
+      await axios.get(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}/words/${wordId}`, getToken);
     } catch (err) {
       console.log(err);
     }
@@ -176,7 +176,7 @@ const content = () => {
   async function deleteWords() {
     try {
       await Promise.all(selectedCheckbox.map(async (wordId) => {
-        await axios.delete(`/users/${userId}/dictionaries/${dictionaryId}/words/${wordId}`, getToken)
+        await axios.delete(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries/${dictionaryId}/words/${wordId}`, getToken)
       })
       );
       getWords();
