@@ -20,7 +20,7 @@ const login = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      const response = await axios.post('https://wordsaver-pyroject-488fda2b8133.herokuapp.com/login', data);
+      const response = await axios.post('/login', data);
       if ('token' in response.data) {
         window.localStorage.setItem('token', response.data.token);
         window.localStorage.setItem('username', response.data.username);
@@ -28,7 +28,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}`);
+      navigate(`/users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');
