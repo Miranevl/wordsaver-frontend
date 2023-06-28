@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "../../axios.js";
@@ -28,7 +27,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`https://wordsaver-frontend.vercel.app/users/${userId}`);
+      navigate(`/users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');

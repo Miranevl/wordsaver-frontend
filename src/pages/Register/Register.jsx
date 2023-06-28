@@ -31,7 +31,7 @@ const Register = () => {
       }
       await axios.post('https://wordsaver-pyroject-488fda2b8133.herokuapp.com/register', data);
       alert('Вы успешно зарегистрированы');
-      navigate(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/login`);
+      navigate(`/login`);
 
     } catch (err) {
       console.log(err);
