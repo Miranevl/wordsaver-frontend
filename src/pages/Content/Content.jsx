@@ -124,7 +124,7 @@ const content = () => {
   }
   async function getDictionaries() {
     try {
-      const response = await axios.get(`https://wordsaver-pyroject-488fda2b8133.herokuapp.com/users/${userId}/dictionaries`, getToken);
+      const response = await axios.get(`/users/${userId}/dictionaries`, getToken);
       const myDictionary = response.data.dictionaries;
       setDictionaries(myDictionary);
 
