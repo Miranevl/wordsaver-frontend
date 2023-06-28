@@ -13,7 +13,7 @@ const App = ()  => {
 <Routes>
 <Route path='/' element={<HomePage/>}></Route>
 <Route path='/register' element={<Register/>}></Route>
-<Route path='https://wordsaver-frontend.vercel.app/login' element={<Login/> }></Route>
+<Route path='/login' element={<Login/> }></Route>
 <Route path='/users/:userId' element={ <Content/>}></Route>
 </Routes>
 </>
