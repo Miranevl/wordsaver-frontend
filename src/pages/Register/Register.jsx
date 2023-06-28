@@ -29,12 +29,11 @@ const Register = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      await axios.post(`https://wordsaver-frontend.vercel.app/register`, data);
+      await axios.post('/register', data);
       alert('Вы успешно зарегистрированы');
       navigate(`/login`);
 
     } catch (err) {
-      console.log(err);
       alert(err.response.data.errors);
     }
   }

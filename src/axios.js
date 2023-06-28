@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: process.env.API_URL,
+    baseURL: 'https://wordsaver-pyroject-488fda2b8133.herokuapp.com',
 })
 
 export default instance;

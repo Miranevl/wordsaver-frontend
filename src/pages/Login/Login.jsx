@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "../../axios.js";
@@ -19,7 +20,7 @@ const login = () => {
         email: email.trim().toLowerCase(),
         password: password,
       }
-      const response = await axios.post(`${process.env.API_URL}/login`, data);
+      const response = await axios.post('/login', data);
       if ('token' in response.data) {
         window.localStorage.setItem('token', response.data.token);
         window.localStorage.setItem('username', response.data.username);
@@ -27,7 +28,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`${process.env.API_URL}users/${userId}`);
+      navigate(`/users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');
