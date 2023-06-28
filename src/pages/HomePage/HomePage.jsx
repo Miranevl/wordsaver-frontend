@@ -14,11 +14,11 @@ const HomePage = () => {
             <div className="row">
               <div className="test1 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div className="text col"><p>Зарегистрируйся и пользуйся</p></div>
-                <div className="col"><Link to='https://wordsaver-pyroject-488fda2b8133.herokuapp.com/register'><button>Зарегистроваться</button></Link></div>
+                <div className="col"><Link to='/register'><button>Зарегистроваться</button></Link></div>
               </div>
               <div className="test2 mt-3 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div className="text col"><p>Войти в свой аккаунт</p></div>
-                <div className="col"><Link to='https://wordsaver-pyroject-488fda2b8133.herokuapp.com/login'><button>Войти</button></Link></div>
+                <div className="col"><Link to='/login'><button>Войти</button></Link></div>
               </div>
             </div>
           </div>
