@@ -28,7 +28,7 @@ const login = () => {
         console.log('Токена нет')
       }
       const userId = response.data._id;
-      navigate(`/users/${userId}`);
+      navigate(`https://wordsaver-frontend.vercel.app/users/${userId}`);
     } catch (err) {
       console.log('Ошибка:', err);
       alert('Неверный логин или пароль');
