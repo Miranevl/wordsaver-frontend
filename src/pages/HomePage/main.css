@@ -155,8 +155,13 @@
       height: 50vh;
     }
   }
+
+
+  @media (max-width: 440px){
+    
+  }
   
-  @media (max-width: 365px) {
+  @media (max-width: 320px) {
     .main-content {
       height: 50vh;
     }
