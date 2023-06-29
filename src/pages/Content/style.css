@@ -24,10 +24,11 @@
     background: #1A1533;
     overflow-y: scroll;
 }
+
 .disabled {
     background-color: #DCDEE44D;
     pointer-events: none;
-  }
+}
 
 
 @media (max-width: 1920px) {
@@ -114,7 +115,7 @@
         height: 50px;
         width: 15vw;
     }
-    
+
 
 }
 
@@ -129,9 +130,10 @@
         width: auto;
         height: auto;
     }
+
     .word-list-content {
         height: 170px;
-     }
+    }
 }
 
 @media (max-width: 576px) {
@@ -163,12 +165,18 @@
         height: auto;
         width: 50vw;
     }
+
     .world-list-text {
         font-size: 3vw;
-     }
-     .word-list-content {
+    }
+
+    .word-list-content {
         height: 55vh;
-     }
+    }
+
+    .main-navbar {
+        height: auto;
+    }
 }
 
 
@@ -202,9 +210,10 @@
     .world-list-text {
         font-size: 9px;
         text-align: center;
-     }
-     .word-list-content {
+    }
+
+    .word-list-content {
         height: 150px;
-     }
+    }
 
 }
