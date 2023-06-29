@@ -26,3 +26,25 @@
 .input-add-dictionary::placeholder {
     text-align: center;
 }
+
+@media (max-width: 1200px) {
+    button {
+        height: auto;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        height: auto;
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    button {
+        height: auto;
+        width: 200px;
+    }
+}
