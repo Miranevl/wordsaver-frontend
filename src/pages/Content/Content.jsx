@@ -94,7 +94,7 @@ const content = () => {
       setIsDictionarySelected(false);
       const wordsId = response.data.words;
       setWords(wordsId);
-
+      setDictionaryId('');
     }
     catch (err) {
       console.log(err);
